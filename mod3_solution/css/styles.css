@@ -1,0 +1,35 @@
+/* Robert Brownhill
+  Week 3 Homework
+    9/14/2016
+    */
+
+#my_nav .navbar-brand
+{
+  font-size: 2em;
+}
+#my-page-header {
+  border-bottom: 0px;
+}
+#my_box {
+  background-color: #dcdcdc;
+  height: 1000px;
+  font-size: 1.5em;
+}
+
+#my_box_title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+    margin-bottom: 20px;
+}
+#nav-list li {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 2px;
+  background-color: #dcdcdc;
+  line-height: 3em;
+}
+#main-content h2 {
+  margin-top: -20px;
+}
