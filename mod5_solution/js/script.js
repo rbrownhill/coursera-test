@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  homeHtmlUrl,
+  allCategoriesUrl,
   buildAndShowHomeHTML,
   true); // Explicitely setting the flag to get JSON from server processed into an object literal
 });
@@ -119,10 +119,10 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
      
-   //   var homeHtmlToInsertIntoMainPage =  
-   //           insertProperty(homeHtml,
-    //              "randomCategoryShortName",
-    //              chosenCategoryShortName);
+     var homeHtmlToInsertIntoMainPage =  
+             insertProperty(homeHtml,
+                 "randomCategoryShortName",
+                chosenCategoryShortName);
       
    //  console.log(homeHtmlToInsertIntoMainPage);
 
@@ -130,7 +130,7 @@ function buildAndShowHomeHTML (categories) {
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
-      insertHtml("#main-content", homeHtml);
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
       
     //  console.log("end of call");
     
